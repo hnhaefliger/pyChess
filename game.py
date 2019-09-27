@@ -108,3 +108,4 @@ global selection, turn, possible_moves
 turn = 'w'
 selection = ''
 possible_moves = []
+main.root.mainloop()
