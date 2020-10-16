@@ -24,7 +24,9 @@ class board:
 
         self.pieces = {'black': {}, 'white': {}}
         directories = os.listdir('pieces')
-        directories.remove('.DS_Store')
+        
+        if '.DS_Store' in directories:
+        	directories.remove('.DS_Store')
 
         for directory in directories:
             subdirs = os.listdir('pieces/' + directory)
